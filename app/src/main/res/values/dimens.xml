@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultTitle">30sp</dimen>
+    <dimen name="otherTitle">30sp</dimen>
+    <dimen name="input">20sp</dimen>
+</resources>

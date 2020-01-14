@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Prisma Segitiga</string>
+    <string name="prisma_segitiga">PRISMA SEGITIGA</string>
+    <string name="panjang_alas">Panjang Alas</string>
+    <string name="lebar_alas">Lebar alas</string>
+    <string name="tinggi_alas">Tinggi alas</string>
+    <string name="hitung">HITUNG</string>
+    <string name="hasil">HASIL</string>
+    <string name="lengkapi_data">Lengkapi Data</string>
+</resources>
