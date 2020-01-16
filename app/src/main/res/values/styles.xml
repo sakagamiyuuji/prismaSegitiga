@@ -9,7 +9,7 @@
     </style>
 
     <style name="StyleKu"  parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimary">@color/darkmode</item>
     </style>
 
 </resources>

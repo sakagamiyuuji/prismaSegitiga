@@ -7,4 +7,6 @@
     <color name="merah">#d92511</color>
     <color name="kuning">#e8e81c</color>
     <color name="turqoise">#20e3d9</color>
+    <color name="darkmode">#282b2b</color>
+
 </resources>

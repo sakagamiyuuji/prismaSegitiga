@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prisma_segitiga"
+                android:textStyle="bold"
+                android:textColor="@color/biru"
+                android:textAlignment="center"
+                android:textSize="@dimen/defaultTitle"
+                android:background="@drawable/title_bg"/>
+
+
+            <TextView
+                android:id="@+id/txt_p_alas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/panjang_alas"
+                android:textColor="@color/merah"
+                android:textSize="@dimen/input" />
+
+            <EditText
+                android:id="@+id/p_alas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="numberDecimal"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/txt_lbr_alas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/lebar_alas"
+                android:textColor="@color/merah"
+                android:textSize="@dimen/input" />
+
+
+            <EditText
+                android:id="@+id/lbr_alas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="numberDecimal"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/txt_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/tinggi_alas"
+                android:textColor="@color/merah"
+                android:textSize="@dimen/input" />
+
+
+
+            <EditText
+                android:id="@+id/t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="numberDecimal"
+                android:lines="1"/>
+
+            <Button
+                android:id="@+id/btn_hitung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hitung" />
+
+            <TextView
+                android:id="@+id/tv_hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/defaultTitle"
+                android:text= ""/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="108dp"
+                    android:layout_height="47dp"
+                    android:text="@string/reset"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

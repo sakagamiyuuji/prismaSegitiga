@@ -8,4 +8,8 @@
     <string name="hasil">HASIL</string>
     <string name="lengkapi_data">Lengkapi Data</string>
     <string name="reset">RESET</string>
+    <string name="kotak">kotak</string>
+    <string name="input_nama">MASUKAN NAMA ANDA</string>
+    <string name="next">NEXT</string>
+    <string name="welcome">WELCOME</string>
 </resources>
