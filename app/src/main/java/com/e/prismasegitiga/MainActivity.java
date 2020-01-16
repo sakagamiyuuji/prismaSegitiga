@@ -25,12 +25,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        p = findViewById(R.id.p_alas);
-        l = findViewById(R.id.lbr_alas);
-        t = findViewById(R.id.t);
-        btnHitung = findViewById(R.id.btn_hitung);
-        btnReset = findViewById(R.id.btn_reset);
-        tvHasil = findViewById(R.id.tv_hasil);
+        initialViewComponent();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         if(savedInstanceState != null){
             result=savedInstanceState.getDouble(STATE_RESULT);
@@ -101,5 +99,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putDouble(STATE_RESULT, result);
+    }
+
+    public void initialViewComponent(){
+        p = findViewById(R.id.p_alas);
+        l = findViewById(R.id.lbr_alas);
+        t = findViewById(R.id.t);
+        btnHitung = findViewById(R.id.btn_hitung);
+        btnReset = findViewById(R.id.btn_reset);
+        tvHasil = findViewById(R.id.tv_hasil);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

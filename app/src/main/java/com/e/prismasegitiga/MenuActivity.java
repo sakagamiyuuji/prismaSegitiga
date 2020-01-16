@@ -19,13 +19,25 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         btnPrisma=findViewById(R.id.btn_prisma);
+        weLL= findViewById(R.id.well);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //btnKotak=findViewById(R.id.btn_kotak);
 
-        weLL= findViewById(R.id.well);
+        if(getIntent().getExtras() != null){
+            //without bundle
+            Intent data = getIntent();
+            String nama = data.getStringExtra(LoginActivity.EXTRA_PERSON_NAME);
+            weLL.setText("WELCOME " + nama);
+            weLL.setVisibility(View.VISIBLE);
+        }
+
+/*      CARA HANS(BUNDLE)
+
         Bundle data = getIntent().getExtras();
         String s = data.getString("names");
-        weLL.setText("Welcome "+ s);
+        weLL.setText("Welcome "+ s );*/
 
         btnPrisma.setOnClickListener((new View.OnClickListener() {
             @Override
@@ -35,5 +47,10 @@ public class MenuActivity extends AppCompatActivity {
             }
         }));
 
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
