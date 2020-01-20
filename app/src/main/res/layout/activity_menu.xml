@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp">
@@ -21,17 +23,40 @@
         android:text="@string/prisma_segitiga"
         android:textStyle="bold"
         android:textSize="50sp"
-        android:textColor="@color/biru"
-        android:background="@color/turqoise"/>
+        android:textColor="#ffffff"
+        android:background="@color/biru"/>
 
-    <Button
-        android:id="@+id/btn_kotak"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/kotak"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:textColor="@color/biru"
-        android:background="@color/turqoise"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="140dp"
+            android:background="@color/merah"
+            android:text="@string/call_us"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="80dp"
+            android:layout_marginBottom="80dp"
+            android:background="@color/merah"
+            android:text="@string/web"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>

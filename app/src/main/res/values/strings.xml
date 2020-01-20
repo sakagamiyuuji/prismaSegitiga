@@ -12,4 +12,8 @@
     <string name="input_nama">MASUKAN NAMA ANDA</string>
     <string name="next">NEXT</string>
     <string name="welcome">WELCOME</string>
+    <string name="call_us">Call us</string>
+    <string name="web">WEBSITE</string>
+    <string name="nyam">Nyam Nyam Nyam</string>
+    <string name="for_logo">For Logo</string>
 </resources>
